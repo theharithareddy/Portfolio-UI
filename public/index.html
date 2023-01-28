@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title> Shopping </title>
+        <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+            header{
+                display: flex;
+                justify-content: space-between;
+                font-family: Arial;
+                font-size: 20px;
+                background-color: rosybrown;
+                color: papayawhip;
+                padding: 5px;
+            }
+            span{
+                margin-right: 20px;
+            }
+            .brand-name {
+              font-weight: bold;
+              font-size: 25px;
+            }
+            section{
+                height: 600px;
+            }
+            footer{
+                display: grid;
+                grid-template-columns: 3fr 2.25fr 2.25fr 2.25fr 2.25fr;
+                font-family: Arial;
+                background-color: rosybrown;
+                height: 150px;
+                color: papayawhip;
+                padding: 10px;
+                font-size: 16 px;
+            }
+            footer div{
+                margin-bottom: 5px;
+            }
+            .social-bar {
+                margin-top: 20px;
+            }
+            .social-bar span{
+                margin-right: 10 px;
+            }  
+            .footer-title{
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .footer-title div{
+                margin-bottom: 10px;
+            }
+            .section-socialbar{
+                background-color: rosybrown;
+                color: wheat;
+                font-size: 25px;
+                position: fixed;
+                bottom: 5px;
+                right: 10px;
+                padding: 5px;
+                border-radius: 20px;
+            }
+            .section-socialbar{
+                margin-bottom: 10px;
+            }
+            .brand-offer{
+                background-color: wheat;
+                color: rgb(122, 90, 90);
+                padding: 5px;
+                text-align: center;
+            }
+            .brand-nav{
+                margin-top: 10px;
+                height: 450px;
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+            .women{
+                background-image: url(../public/images/fashion1.jpg);
+                background-size: cover;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                opacity: 0.7;
+            }
+            .women:hover{
+                opacity: 1;
+            }
+            .men{
+                background-image: url(../public/images/fashion2.jpg);
+                background-size: cover;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                opacity: 0.7;
+            }
+            .men:hover{
+                opacity: 1;
+            }
+            .kids{
+                background-image: url(../public/images/fashion3.jpg);
+                background-size: cover;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                opacity: 0.7;
+            }
+            .kids:hover{
+                opacity: 1;
+            }
+            .banner-title{
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 3px 3px 2px black;
+            }
+            .women button{
+                width: 200px;
+                height: 45px;
+                background-color: wheat;
+                border: none;
+            }
+            .men button{
+                width: 200px;
+                height: 45px;
+                background-color: wheat;
+                border: none;
+            }
+            .kids button{
+                width: 200px;
+                height: 45px;
+                background-color: wheat;
+                border: none;
+            }
+            .policy{
+                display: grid;
+                grid-template-columns: 3fr 3fr 3fr 3fr;
+                margin-top: 20px;
+                margin-left: 85px;
+                font-size: 15px;
+                padding: 15px;
+            }
+            .bar{
+                border-top: 1px solid rgb(212, 208, 208);
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <header>
+            <div>
+                <span class="brand-name">Shopper</span>
+            </div>
+            <div>
+                <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Blog</span>
+                <span>Docs</span>
+                </nav>
+            </div>
+            <div>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div> 
+        </header>
+        <div class="brand-offer">
+            <span class="bi bi-lightning-fill">HAPPY HOLIDAY DEALS ON EVERYTHING<span class="bi bi-lightning-fill"></span></span>
+        </div>
+        <div class="brand-nav">
+            <div class="women">
+
+                <div class="banner-title">Women</div>
+            <div>
+                <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+            </div>
+            </div>
+            <div class="men">
+                <div class="banner-title">Men</div>
+            
+            <div>
+                <button>Shop Men<span class="bi bi-arrow-right"></span></button>
+            </div>
+            </div>
+            <div class="kids">
+                <div class="banner-title">Kids</div>
+            
+            <div>
+                <button>Shop Kids<span class="bi bi-arrow-right"></span></button>
+            </div>
+            </div>
+        </div>
+        <div class="policy">
+            <div class="shipping">
+                <span class="bi bi-truck"></span><b>FREE SHIPPING</b>
+                <br>From all orders over $100<br>
+            </div>
+            <div class="return">
+                <span class="bi bi-arrow-right-square"></span><b>FREE RETURNS</b>
+                 <br>Return money within 30 days<br>
+            </div>
+            <div class="lock">
+                <span class="bi bi-lock"></span><b>SHOPPING</b>
+                <br>You're in safe hands<br>
+            </div>
+            <div class="tag">
+                <span class="bi bi-tag"></span><b>10,000 STYLES</b>
+                <br>We have everything you need<br>
+            </div>
+        </div>
+        <div class="bar">
+        </div>
+        <div>
+            
+        </div>
+        <section>
+            <aside class="section-socialbar">
+             <div class="bi bi-facebook"></div>
+             <div class="bi bi-youtube"></div>
+             <div class="bi bi-linkedin"></div>
+             <div class="bi bi-instagram"></div>
+             <div class="bi bi-twitter"></div>
+            </aside>
+        </section>
+        <footer>
+            <div>
+                <span class="brand-name">Shopper</span>
+                <div class="social-bar">
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-youtube"></span>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">Support </div> 
+                <div>Contact us</div>
+                <div>FAQs</div>
+            </div>
+            <div>
+                <div class="footer-title"> Shop </div>
+                <div> Men's Shooping </div>
+                <div> Women's Shopping </div>
+                <div> Kids' Shooping </div>
+                <div> Discounts </div>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <div>Our Story</div>
+                <div>Careers</div>
+                <div>Terms & Conditions</div>
+                <div>Privacy & Cookie policy</div>
+            </div>
+            <div>
+                <div class="footer-title">CONTACT</div>
+                <div>1-202-555-0105</div>
+                <div>1-202-555-0106</div>
+                <div>help@hopper.com</div>
+            </div>
+        </footer>
+    </body> 
+</html>
